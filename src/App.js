@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './assets/styles/App.css';
 import { About, Contact, Home, Portfolio, Skills } from './pages';
-import { Navbar } from "./containers"
+import { Navbar } from "./containers";
+import { Scrolldown } from './components';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
+      <Scrolldown />
     </BrowserRouter>
   );
 }

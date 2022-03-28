@@ -5,7 +5,7 @@ function Main() {
     return (
         <ul className="menu-items">
             <li className="menu-item">
-                <Link to="/about" >About</Link>
+                <Link to="/about">About Me</Link>
             </li>
             <li className="menu-item">
                 <Link to="/skills" >My Skills</Link>

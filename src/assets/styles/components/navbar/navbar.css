@@ -1,5 +1,31 @@
 .navbar-wrapper {
-  width: 30vw;
-  height: 100vh;
+  height: 7vh;
+  width: 100vw;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-wrapper .logo {
+  letter-spacing: 0.2rem;
+}
+
+.navbar-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-wrapper ul li {
+  margin-left: 2.5rem;
+  display: block;
 }
 /*# sourceMappingURL=navbar.css.map */

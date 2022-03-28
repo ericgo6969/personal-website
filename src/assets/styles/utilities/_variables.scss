@@ -1,2 +1,23 @@
-$primary-color: black;
-$text-color: #239cc9;
+// colors
+$primary-color: #00a6af;
+$background-color: #1d2933;
+$block-color: #1a3c56;
+$secondary-color: #070b0f;
+$highlight-color: #873636;
+$text-color: #ffffff;
+
+//fontsize
+$title-fontsize: 76px;
+$text-fontsize: 24px;
+$button-fontsize: 18px;
+
+$background-image: linear-gradient(
+    15deg,
+    hsl(210, 36%, 4%) 0%,
+    hsl(209, 25%, 7%) 17%,
+    hsl(209, 22%, 9%) 33%,
+    hsl(209, 23%, 11%) 50%,
+    hsl(208, 25%, 12%) 67%,
+    hsl(208, 26%, 14%) 83%,
+    hsl(207, 28%, 16%) 100%
+);

@@ -1,4 +1,22 @@
 .navbar-wrapper {
-    width: 30vw;
-    height: 100vh;
+    height: 7vh;
+    width: 100vw;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    align-items: center;
+
+    .logo {
+        letter-spacing: 0.2rem;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-left: 2.5rem;
+            display: block;
+        }
+    }
 }
