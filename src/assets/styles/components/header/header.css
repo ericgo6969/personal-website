@@ -1,0 +1,67 @@
+.fullpage-slide .slide-wrapper .moon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 29.427%;
+  margin: auto;
+  height: 1385px;
+  width: 1385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img {
+  position: relative;
+  width: 39.350180505%;
+  height: 39.350180505%;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .moon__back {
+  z-index: -100;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .moon__front {
+  z-index: 200;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud {
+  position: absolute;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front1 {
+  top: 20.55045%;
+  right: -49.357798%;
+  width: 88.44%;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front2 {
+  bottom: -18.53211%;
+  right: -28.6238532%;
+  width: 87.155%;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front3 {
+  bottom: -5.137614678%;
+  left: -49.357798%;
+  width: 87.155%;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud--back1 {
+  top: -22.38532%;
+  right: -7.706422%;
+  width: 69.724%;
+}
+
+.fullpage-slide .slide-wrapper .moon .moon__img .cloud--back2 {
+  top: -5.504587%;
+  left: -38.715596%;
+  width: 87.155%;
+}
+/*# sourceMappingURL=header.css.map */

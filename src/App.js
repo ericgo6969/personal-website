@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './assets/styles/App.css';
-import { About, Contact, Home, Portfolio, Skills } from './pages';
-import { Navbar } from "./containers";
-import { ScrollDown, SocialBar } from './components';
+import { Header } from "./containers";
+import { SocialBar } from './components';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <ScrollDown />
+      <Header />
       <SocialBar />
     </BrowserRouter>
   );
 }
 
 export default App;
+
+// if ($("#js-fullpage").length) new Parallax($(".js-parallax-moon").get(0)), new Parallax($(".js-parallax-moonlight").get(0)), new Parallax($(".js-parallax-star").get(0));
