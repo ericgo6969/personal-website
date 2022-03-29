@@ -1,0 +1,63 @@
+.socialbar-wrapper {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 2.5rem;
+}
+
+.socialbar-wrapper .social-menu {
+  margin-bottom: 1rem;
+  width: 50px;
+}
+
+.socialbar-wrapper .social-menu ul {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialbar-wrapper .social-menu ul li {
+  margin-left: 1rem;
+  letter-spacing: 0.15em;
+  font-size: 18px;
+  display: block;
+}
+
+.socialbar-wrapper .circular-bar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialbar-wrapper .circular-bar::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  background: #070b0f;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.socialbar-wrapper .process-bar, .socialbar-wrapper .process-bar::before {
+  height: 50px;
+  width: 50px;
+  background-color: #c33510;
+  left: 50%;
+  position: absolute;
+}
+
+.socialbar-wrapper .process-bar::before {
+  left: -50%;
+  top: 50%;
+  content: "";
+}
+/*# sourceMappingURL=socialbar.css.map */

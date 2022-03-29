@@ -1,7 +1,7 @@
 import React from 'react';
 import "../assets/styles/components/scrolldown/scrolldown.css";
 
-function Scrolldown() {
+function ScrollDown() {
     return (
         <div className="scrolldown-wrapper">
             <section id="scrolldown">
@@ -11,4 +11,4 @@ function Scrolldown() {
     )
 }
 
-export default Scrolldown
+export default ScrollDown

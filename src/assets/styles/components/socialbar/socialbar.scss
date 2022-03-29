@@ -1,0 +1,61 @@
+@import "../../utilities/variables";
+
+.socialbar-wrapper {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 2.5rem;
+
+    .social-menu {
+        margin-bottom: 1rem;
+        width: 50px;
+
+        ul {
+            transform: rotate(-90deg);
+            display: flex;
+
+            li {
+                margin-left: 1rem;
+                letter-spacing: 0.15em;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    .circular-bar {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            height: 40px;
+            width: 40px;
+            background: $secondary-color;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .process-bar {
+        height: 50px;
+        width: 50px;
+        background-color: $highlight-color;
+        left: 50%;
+        position: absolute;
+
+        &::before {
+            @extend .process-bar;
+            left: -50%;
+            top: 50%;
+            content: "";
+        }
+    }
+}

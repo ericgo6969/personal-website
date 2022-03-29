@@ -1,11 +1,11 @@
 .navbar-wrapper {
-    height: 7vh;
     width: 100vw;
-    min-height: 100px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 2.5rem;
     align-items: center;
+    position: fixed;
 
     .logo {
         letter-spacing: 0.2rem;

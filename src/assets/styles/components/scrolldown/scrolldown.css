@@ -1,6 +1,6 @@
 .scrolldown-wrapper {
   position: absolute;
-  bottom: 7%;
+  bottom: 100px;
   width: 100%;
 }
 
@@ -33,7 +33,7 @@
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #fff;
+  background-color: #c33510;
   border-radius: 100%;
   -webkit-animation: scrolldown 2s infinite;
   animation: scrolldown 2s infinite;

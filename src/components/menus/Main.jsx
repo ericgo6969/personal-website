@@ -5,10 +5,10 @@ function Main() {
     return (
         <ul className="menu-items">
             <li className="menu-item">
-                <Link to="/about">About Me</Link>
+                <Link to="/about">About</Link>
             </li>
             <li className="menu-item">
-                <Link to="/skills" >My Skills</Link>
+                <Link to="/skills" >Skills</Link>
             </li>
             <li className="menu-item">
                 <Link to="/portfolio" >Portfolio</Link>
