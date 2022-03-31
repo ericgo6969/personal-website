@@ -1,4 +1,100 @@
-.fullpage-slide .slide-wrapper .moon {
+.fullpage-slide .slide-wrapper {
+  position: relative;
+}
+
+.fullpage-slide .slide-wrapper .slide-content {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fullpage-slide .slide-wrapper .slide-content .sub-content {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .sub-content .code-tag {
+  color: #666666;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .sub-content .code-tag.close {
+  margin-left: 9.5rem;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .sub-content .text {
+  margin-left: 2rem;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .content {
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2.4rem;
+  font-weight: normal;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .line {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .line span {
+  display: block;
+  width: 88px;
+  height: 4px;
+  border-radius: 5px;
+  background: #c33510;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .line span:first-child {
+  margin-bottom: 1.4rem;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .line span:last-child {
+  margin-left: 54px;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .description {
+  font-size: 30px;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .description span {
+  padding: 0.3rem;
+  background: #c33510;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .note {
+  color: #ccc;
+  font-size: 18px;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fullpage-slide .slide-wrapper .slide-content .note .line {
+  width: 22px;
+  height: 4px;
+  border-radius: 5px;
+  background: #c33510;
+  margin: 0 25px 0 0;
+}
+
+.fullpage-slide .slide-wrapper .moon-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullpage-slide .slide-wrapper .moon-wrapper .moon {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -17,51 +113,138 @@
   justify-content: center;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img {
   position: relative;
   width: 39.350180505%;
   height: 39.350180505%;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .moon__back {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .moon__back {
   z-index: -100;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .moon__front {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .moon__front {
   z-index: 200;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud {
   position: absolute;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front1 {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--front1 {
   top: 20.55045%;
   right: -49.357798%;
   width: 88.44%;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front2 {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--front2 {
   bottom: -18.53211%;
   right: -28.6238532%;
   width: 87.155%;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud--front3 {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--front3 {
   bottom: -5.137614678%;
   left: -49.357798%;
   width: 87.155%;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud--back1 {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--back1 {
   top: -22.38532%;
   right: -7.706422%;
   width: 69.724%;
 }
 
-.fullpage-slide .slide-wrapper .moon .moon__img .cloud--back2 {
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--back2 {
   top: -5.504587%;
   left: -38.715596%;
   width: 87.155%;
+}
+
+.fullpage-slide .moon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+}
+
+.fullpage-slide .moon-background .moonlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 29.427%;
+  margin: auto;
+  height: 1385px;
+  width: 1385px;
+  z-index: -100;
+}
+
+.fullpage-slide .moon-background .moonlight .moonlight__wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.fullpage-slide .moon-background .moonlight .moonlight__wrap .moonlight__img {
+  background: url(../../../images/moonlight.svg) no-repeat;
+  background-size: 100%;
+}
+
+.fullpage-slide .moon-background .moonlight .moonlight__wrap .layer {
+  width: 100%;
+  height: 100%;
+}
+
+.fullpage-slide .star {
+  width: 1300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 29.427%;
+  z-index: -100;
+}
+
+.fullpage-slide .star .layer {
+  width: 100%;
+  height: 100%;
+}
+
+.fullpage-slide .star .layer .star__img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fullpage-slide .star .layer .star__img img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .moon {
+    width: 100vw;
+    height: 100vw;
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .moon {
+    width: 165vw;
+    height: 165vw;
+    left: 50%;
+    top: -10rem;
+    bottom: auto;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 /*# sourceMappingURL=header.css.map */
