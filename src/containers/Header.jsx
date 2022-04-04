@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./Navbar";
 import { ScrollDown } from "../components";
 import "../assets/styles/components/header/header.css";
+// import anime from "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
 
 // image
 import cloud1 from "../assets/images/cloud1.svg";
@@ -11,6 +12,16 @@ import bCloud01 from "../assets/images/b_cloud01.svg";
 import bCloud02 from "../assets/images/b_cloud02.svg";
 import moon from "../assets/images/moon.svg";
 import bStart from "../assets/images/star.svg";
+
+// const animeMotion = () => {
+//     anime({
+//         targets: 'div',
+//         translateX: 250,
+//         rotate: '1turn',
+//         backgroundColor: '#FFF',
+//         duration: 800
+//     });
+// }
 
 function Header() {
     return (
@@ -46,6 +57,7 @@ function Header() {
                                 <div className="cloud cloud--back2 js-moon">
                                     <img src={bCloud02} alt="cloud" />
                                 </div>
+
                             </div>
                             <div className="moon__front layer" data-depth="0.6">
                                 <div className="cloud cloud--front2 js-moon">

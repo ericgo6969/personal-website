@@ -1,0 +1,83 @@
+.about {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.about .wrapper {
+  width: 87%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  min-width: 1780px;
+  border-radius: 8px;
+}
+
+.about .wrapper .content-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .wrapper .content-wrapper .content {
+  width: 50%;
+  height: 100%;
+}
+
+.about .wrapper .content-wrapper .content.image {
+  background: black;
+}
+
+.about .wrapper .content-wrapper .content.text {
+  position: relative;
+}
+
+.about .wrapper .content-wrapper .content.text .haft {
+  width: 100%;
+  height: 50%;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main {
+  position: absolute;
+  --mainwidth: 8%;
+  right: 0;
+  width: calc(100% + var(--mainwidth));
+  z-index: 2;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item {
+  width: 32%;
+  height: 100%;
+  border-radius: 8px;
+  background: #666;
+  position: absolute;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item:first-child {
+  left: 0;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item:nth-child(1) {
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item:last-child {
+  right: 0;
+  top: 20%;
+}
+/*# sourceMappingURL=about.css.map */
