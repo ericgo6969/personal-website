@@ -4,19 +4,6 @@
   position: relative;
 }
 
-.about .wrapper {
-  width: 87%;
-  height: 80%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: white;
-  min-width: 1780px;
-  border-radius: 8px;
-}
-
 .about .wrapper .content-wrapper {
   height: 100%;
   width: 100%;
@@ -28,14 +15,52 @@
 .about .wrapper .content-wrapper .content {
   width: 50%;
   height: 100%;
+  position: relative;
 }
 
 .about .wrapper .content-wrapper .content.image {
   background: black;
+  position: relative;
+  overflow: hidden;
 }
 
 .about .wrapper .content-wrapper .content.text {
   position: relative;
+}
+
+.about .wrapper .content-wrapper .content.text .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+}
+
+.about .wrapper .content-wrapper .content.text .layer .opacity {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.about .wrapper .content-wrapper .content.text .layer .opacity::before {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  background: #c33510;
+  -webkit-transform: rotate(3deg) translate(-65%, -10%);
+          transform: rotate(3deg) translate(-65%, -10%);
+  opacity: 0.2;
+}
+
+.about .wrapper .content-wrapper .content.text .layer .opacity::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: #c33510;
+  -webkit-transform: rotate(5deg) translate(-70%, -10%);
+          transform: rotate(5deg) translate(-70%, -10%);
+  opacity: 0.1;
 }
 
 .about .wrapper .content-wrapper .content.text .haft {
@@ -48,13 +73,13 @@
   --mainwidth: 8%;
   right: 0;
   width: calc(100% + var(--mainwidth));
-  z-index: 2;
+  z-index: 4;
 }
 
 .about .wrapper .content-wrapper .content.text .haft.main .items {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .about .wrapper .content-wrapper .content.text .haft.main .items .item {
@@ -67,17 +92,24 @@
 
 .about .wrapper .content-wrapper .content.text .haft.main .items .item:first-child {
   left: 0;
+  top: 0;
 }
 
-.about .wrapper .content-wrapper .content.text .haft.main .items .item:nth-child(1) {
+.about .wrapper .content-wrapper .content.text .haft.main .items .item:nth-child(3) {
   left: 50%;
-  top: 20%;
+  top: 10%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.about .wrapper .content-wrapper .content.text .haft.main .items .item:last-child {
+.about .wrapper .content-wrapper .content.text .haft.main .items .item:nth-child(2) {
   right: 0;
-  top: 20%;
+  top: 15%;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item .header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
 }
 /*# sourceMappingURL=about.css.map */
