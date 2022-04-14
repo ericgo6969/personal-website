@@ -10,6 +10,61 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.about .wrapper .content-wrapper > .header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .wrapper .content-wrapper > .header h3 {
+  font-size: 60px;
+  padding: 2.5rem;
+  letter-spacing: 0.25rem;
+}
+
+.about .wrapper .content-wrapper > .header h3 span {
+  color: #c33510;
+}
+
+.about .wrapper .content-wrapper > .header .sub-content {
+  -webkit-transform: translate(60%);
+          transform: translate(60%);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about .wrapper .content-wrapper > .header .sub-content .code-tag {
+  color: #ccc;
+}
+
+.about .wrapper .content-wrapper > .header .sub-content .code-tag.close {
+  margin-left: 6.5rem;
+}
+
+.about .wrapper .content-wrapper > .header .sub-content .text {
+  margin-left: 2rem;
+}
+
+.about .wrapper .content-wrapper > .header .sub-content .text:nth-child(3) {
+  margin-left: 3.5rem;
 }
 
 .about .wrapper .content-wrapper .content {
@@ -70,7 +125,7 @@
 
 .about .wrapper .content-wrapper .content.text .haft.main {
   position: absolute;
-  --mainwidth: 8%;
+  --mainwidth: 52px;
   right: 0;
   width: calc(100% + var(--mainwidth));
   z-index: 4;
@@ -80,24 +135,27 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  max-width: 980px;
+  left: 0;
 }
 
 .about .wrapper .content-wrapper .content.text .haft.main .items .item {
   width: 32%;
   height: 100%;
   border-radius: 8px;
-  background: #666;
+  background: #1d2933;
   position: absolute;
+  max-width: 320px;
 }
 
 .about .wrapper .content-wrapper .content.text .haft.main .items .item:first-child {
   left: 0;
-  top: 0;
+  top: 5%;
 }
 
 .about .wrapper .content-wrapper .content.text .haft.main .items .item:nth-child(3) {
   left: 50%;
-  top: 10%;
+  top: 25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -110,6 +168,36 @@
 .about .wrapper .content-wrapper .content.text .haft.main .items .item .header {
   text-align: center;
   text-transform: uppercase;
-  padding: 2rem;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item .header > .content {
+  width: 100%;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item .header > .content img {
+  max-width: 100%;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item.backend .header {
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item.backend .header img {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.about .wrapper .content-wrapper .content.text .haft.main .items .item.backend .header::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #c33510;
 }
 /*# sourceMappingURL=about.css.map */

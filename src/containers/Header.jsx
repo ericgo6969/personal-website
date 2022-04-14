@@ -5,13 +5,13 @@ import "../assets/styles/components/header/header.css";
 // import anime from "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
 
 // image
-import cloud1 from "../assets/images/cloud1.svg";
-import cloud2 from "../assets/images/cloud2.svg";
-import cloud3 from "../assets/images/cloud3.svg";
-import bCloud01 from "../assets/images/b_cloud01.svg";
-import bCloud02 from "../assets/images/b_cloud02.svg";
-import moon from "../assets/images/moon.svg";
-import bStart from "../assets/images/star.svg";
+import cloud1 from "../assets/images/header/cloud1.svg";
+import cloud2 from "../assets/images/header/cloud2.svg";
+import cloud3 from "../assets/images/header/cloud3.svg";
+import bCloud01 from "../assets/images/header/b_cloud01.svg";
+import bCloud02 from "../assets/images/header/b_cloud02.svg";
+import moon from "../assets/images/header/moon.svg";
+import bStart from "../assets/images/header/star.svg";
 
 // const animeMotion = () => {
 //     anime({

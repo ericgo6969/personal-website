@@ -10,6 +10,51 @@
             height: 100%;
             width: 100%;
             display: flex;
+            position: relative;
+
+            &>.header {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font-size: 60px;
+                    padding: 2.5rem;
+                    letter-spacing: 0.25rem;
+
+                    span {
+                        color: $highlight-color;
+                    }
+                }
+
+                .sub-content {
+                    transform: translate(60%);
+                    line-height: 1.8;
+                    margin-bottom: 1rem;
+
+                    .code-tag {
+                        color: #ccc;
+
+                        &.close {
+                            margin-left: 6.5rem;
+                        }
+                    }
+
+                    .text {
+                        margin-left: 2rem;
+
+                        &:nth-child(3) {
+                            margin-left: 3.5rem;
+                        }
+                    }
+                }
+            }
 
             .content {
                 width: 50%;
@@ -65,7 +110,7 @@
                         &.main {
                             position: absolute;
 
-                            --mainwidth: 8%;
+                            --mainwidth: 52px;
                             right: 0;
                             // max-width: 960px;
                             width: calc(100% + var(--mainwidth));
@@ -75,22 +120,25 @@
                                 width: 100%;
                                 height: 100%;
                                 position: absolute;
+                                max-width: 980px;
+                                left: 0;
 
                                 .item {
                                     width: 32%;
                                     height: 100%;
                                     border-radius: 8px;
-                                    background: #666;
+                                    background: #1d2933;
                                     position: absolute;
+                                    max-width: 320px;
 
                                     &:first-child {
                                         left: 0;
-                                        top: 0;
+                                        top: 5%;
                                     }
 
                                     &:nth-child(3) {
                                         left: 50%;
-                                        top: 10%;
+                                        top: 25%;
                                         transform: translate(-50%, -50%);
                                     }
 
@@ -102,7 +150,39 @@
                                     .header {
                                         text-align: center;
                                         text-transform: uppercase;
-                                        padding: 2rem;
+
+                                        &>.content {
+                                            width: 100%;
+
+                                            img {
+                                                max-width: 100%;
+                                                height: 64px;
+                                                background: white;
+                                                border-radius: 50%;
+                                            }
+                                        }
+                                    }
+
+                                    &.backend {
+                                        .header {
+                                            padding: 3rem 2rem;
+                                            position: relative;
+
+                                            img {
+                                                padding: 10px;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 50%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                background: $highlight-color;
+                                            }
+                                        }
                                     }
                                 }
                             }
