@@ -8,9 +8,6 @@ function Main() {
                 <Link to="/about">About</Link>
             </li>
             <li className="menu-item">
-                <Link to="/skills" >Experiments</Link>
-            </li>
-            <li className="menu-item">
                 <Link to="/portfolio" >Portfolio</Link>
             </li>
             <li className="menu-item">

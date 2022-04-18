@@ -3,6 +3,7 @@ import "../assets/styles/components/about/about.css";
 
 // image
 import backIcon from '../assets/images/about/code-tag.svg';
+import designIcon from '../assets/images/about/brush-paintbrush.svg';
 
 function About() {
     return (
@@ -27,12 +28,17 @@ function About() {
                             <div className="items">
                                 <div className="item design">
                                     <div className="header">
-                                        <h5 className="title">
-                                            Design
-                                        </h5>
+                                        <div className="content">
+                                            <img src={designIcon} alt="backend card icon" />
+                                            <h5 className="title">
+                                                Design
+                                            </h5>
+                                        </div>
                                     </div>
                                     <div className="content">
-
+                                        <p>Figma</p>
+                                        <p>Adobe Illustrator </p>
+                                        <p>Adobe Photoshop</p>
                                     </div>
                                 </div>
                                 <div className="item backend">
@@ -46,17 +52,28 @@ function About() {
 
                                     </div>
                                     <div className="content">
-
+                                        <p>PHP/Wordpress</p>
+                                        <p>API</p>
+                                        <p>Node.JS</p>
                                     </div>
                                 </div>
-                                <div className="item">
+                                <div className="item frontend">
                                     <div className="header frontend">
                                         <h5 className="title">
-                                            Frontend
+                                            <span>F</span>
+                                            <div className="sub-title">
+                                                <span>rontend</span>
+                                                <span className="description">development</span>
+                                            </div>
+
                                         </h5>
                                     </div>
                                     <div className="content">
-
+                                        <p>HTML5/CSS</p>
+                                        <p>SCSS</p>
+                                        <p>Javascript</p>
+                                        <p>ReactJS</p>
+                                        <p>Motion</p>
                                     </div>
                                 </div>
                             </div>
