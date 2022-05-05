@@ -8,8 +8,10 @@
 
 .portfolio .wrapper .main .left {
   height: 100%;
-  width: 5%;
+  width: 3%;
   background: black;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,16 +52,27 @@
 }
 
 .portfolio .wrapper .main .center {
-  height: 110%;
-  width: 65%;
-  background: #666;
+  height: 90vh;
+  width: 67%;
   -webkit-transform: translate(0, -4.5%);
           transform: translate(0, -4.5%);
+}
+
+.portfolio .wrapper .main .center .MuiMasonry-root {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio .wrapper .main .right {
   height: 100%;
   width: 30%;
   background: #ccc;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 /*# sourceMappingURL=portfolio.css.map */

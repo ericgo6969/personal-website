@@ -77,6 +77,7 @@
   background: black;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .about .wrapper .content-wrapper .content.text {

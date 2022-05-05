@@ -7,8 +7,10 @@
 
             .left {
                 height: 100%;
-                width: 5%;
+                width: 3%;
                 background: black;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -36,16 +38,23 @@
             }
 
             .center {
-                height: 110%;
-                width: 65%;
-                background: #666;
+                height: 90vh;
+                width: 67%;
                 transform: translate(0, -4.5%);
+
+                .MuiMasonry-root {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
             .right {
                 height: 100%;
                 width: 30%;
                 background: #ccc;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
             }
         }
     }
