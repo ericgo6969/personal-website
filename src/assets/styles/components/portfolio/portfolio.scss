@@ -1,51 +1,71 @@
+@import "../../utilities/variables";
+
 .portfolio {
     .wrapper {
         .main {
             width: 100%;
             height: 100%;
             display: flex;
+            position: sticky;
 
             .left {
                 height: 100%;
                 width: 3%;
-                background: black;
+                // background: $secondary-color;
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                .image {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    flex-direction: column;
-                    height: 50%;
+                // .image {
+                //     display: flex;
+                //     justify-content: space-around;
+                //     align-items: center;
+                //     flex-direction: column;
+                //     height: 50%;
 
-                    img {
-                        max-width: 100%;
-                        height: 40px;
-                        opacity: 0.8;
-                        cursor: pointer;
+                //     img {
+                //         max-width: 100%;
+                //         height: 40px;
+                //         opacity: 0.8;
+                //         cursor: pointer;
                     
-                        &.arrow-up {
-                            transform: rotate(180deg);
+                //         &.arrow-up {
+                //             transform: rotate(180deg);
+                //         }
+                //     }
+                // }
+                
+                .title {
+                    transform: rotate(-90deg);
+                    letter-spacing: 0.7rem;
+                    p {
+                        width: 80vh;
+                        text-align: center;
+
+                        span {
+                            color: $highlight-color;
                         }
                     }
+                    // font-size: 20px;
                 }
-                
-                
             }
 
             .center {
                 height: 90vh;
                 width: 67%;
-                transform: translate(0, -4.5%);
+                transform: translate(0, -5%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                .MuiMasonry-root {
+                .wrapper {
                     height: 100%;
-                    justify-content: center;
-                    align-items: center;
+                    width: 99%;
+                    background: #ccc;
+                    transform: translate(0);
+                    position: static;
                 }
             }
 

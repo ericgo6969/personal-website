@@ -4,12 +4,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .portfolio .wrapper .main .left {
   height: 100%;
   width: 3%;
-  background: black;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   display: -webkit-box;
@@ -23,49 +24,44 @@
           align-items: center;
 }
 
-.portfolio .wrapper .main .left .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 50%;
+.portfolio .wrapper .main .left .title {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  letter-spacing: 0.7rem;
 }
 
-.portfolio .wrapper .main .left .image img {
-  max-width: 100%;
-  height: 40px;
-  opacity: 0.8;
-  cursor: pointer;
+.portfolio .wrapper .main .left .title p {
+  width: 80vh;
+  text-align: center;
 }
 
-.portfolio .wrapper .main .left .image img.arrow-up {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.portfolio .wrapper .main .left .title p span {
+  color: #c33510;
 }
 
 .portfolio .wrapper .main .center {
   height: 90vh;
   width: 67%;
-  -webkit-transform: translate(0, -4.5%);
-          transform: translate(0, -4.5%);
-}
-
-.portfolio .wrapper .main .center .MuiMasonry-root {
-  height: 100%;
+  -webkit-transform: translate(0, -5%);
+          transform: translate(0, -5%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.portfolio .wrapper .main .center .wrapper {
+  height: 100%;
+  width: 99%;
+  background: #ccc;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  position: static;
 }
 
 .portfolio .wrapper .main .right {

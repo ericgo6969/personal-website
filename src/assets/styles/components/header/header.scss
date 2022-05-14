@@ -121,6 +121,10 @@
                         position: absolute;
                     }
 
+                    .cloud--front {
+                        z-index: 2;
+                    }
+
                     .cloud--front1 {
                         top: 20.55045%;
                         right: -49.357798%;

@@ -1,9 +1,6 @@
 import React from 'react';
 import { Paper } from '@mui/material';
-import { Masonry } from '@mui/lab';
-// import Masonry from 'react-masonry-component';
 import "../assets/styles/components/portfolio/portfolio.css";
-import { display, height } from '@mui/system';
 
 // image
 // import arrow from "../assets/images/arrow.svg";
@@ -16,32 +13,20 @@ function Portfolio() {
             <div className="wrapper">
                 <div className="main">
                     <div className="left">
-                        <div className="image">
-                            {/* <img className='arrow-up' src={arrow} alt="arrow up icon" />
+                        {/* <div className="image"> */}
+                        {/* <img className='arrow-up' src={arrow} alt="arrow up icon" />
                             <img src={arrow} alt="arrow down icon" /> */}
+                        {/* </div> */}
+                        <div className="title">
+                            <p>Eric Go - <span>Portfolio</span> -- 2022</p>
                         </div>
                     </div>
                     <div className="center">
-                        <Masonry
-                            columns={{ xs: 1, sm: 2, md: 4 }}
-                            spacing={1}
-                        >
-                            {
-                                heights.map((height, index) => (
-                                    <Paper
-                                        key={index}
-                                        sx={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItems: 'center',
-                                            height: `${height}%`,
-                                            border: '1px solid'
-                                        }}>
-                                        {index + 1}
-                                    </Paper>
-                                ))
-                            }
-                        </Masonry>
+                        <div className="wrapper codepen">
+
+                        </div>
+                        {/* <div className="wrapper"></div>
+                        <div className="wrapper"></div> */}
                     </div>
                     <div className="right"></div>
                 </div>

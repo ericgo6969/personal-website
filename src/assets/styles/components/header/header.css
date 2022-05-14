@@ -132,6 +132,10 @@
   position: absolute;
 }
 
+.fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--front {
+  z-index: 2;
+}
+
 .fullpage-slide .slide-wrapper .moon-wrapper .moon .moon__img .cloud--front1 {
   top: 20.55045%;
   right: -49.357798%;

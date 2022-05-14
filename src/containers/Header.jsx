@@ -49,31 +49,31 @@ function Header() {
                     <div className="moon">
                         <div className="moon__img js-paralax-moon">
                             <div className="moon__front layer" data-depth="0.8">
-                                <div className="cloud cloud--front1 js-moon">
+                                <div className="cloud cloud--front cloud--front1 js-moon">
                                     <img src={cloud1} alt="cloud" />
                                 </div>
                             </div>
                             <div className="moon__back layer" data-depth="0.4">
-                                <div className="cloud cloud--back2 js-moon">
+                                <div className="cloud cloud--back cloud--back2 js-moon">
                                     <img src={bCloud02} alt="cloud" />
                                 </div>
 
                             </div>
                             <div className="moon__front layer" data-depth="0.6">
-                                <div className="cloud cloud--front2 js-moon">
+                                <div className="cloud cloud--front cloud--front2 js-moon">
                                     <img src={cloud2} alt="cloud" />
                                 </div>
                             </div>
-                            <div className="moon__back layer">
+                            <div className="moon__back moon__center layer">
                                 <img src={moon} alt="moon" />
                             </div>
                             <div className="moon__front layer" data-depth="0.7">
-                                <div className="cloud cloud--front3 js-moon">
+                                <div className="cloud cloud--front cloud--front3 js-moon">
                                     <img src={cloud3} alt="cloud" />
                                 </div>
                             </div>
                             <div className="moon__back layer" data-depth="0.3">
-                                <div className="cloud cloud--back1 js-moon">
+                                <div className="cloud cloud--back cloud--back1 js-moon">
                                     <img src={bCloud01} alt="cloud" />
                                 </div>
                             </div>
