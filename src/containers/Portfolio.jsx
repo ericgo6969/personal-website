@@ -22,17 +22,10 @@ function Portfolio() {
                         </div>
                     </div>
                     <div className="center">
-                        <div className="wrapper codepen">
-
-                        </div>
-                        {/* <div className="wrapper codepen">
-
-                        </div>
-                        <div className="wrapper codepen">
-
-                        </div> */}
-                        {/* <div className="wrapper"></div>
-                        <div className="wrapper"></div> */}
+                        <div className="wrapper pack1"></div>
+                        <div className="wrapper pack2"></div>
+                        <div className="wrapper pack3"></div>
+                        <div className="wrapper pack4"></div>
                     </div>
                     <div className="right"></div>
                 </div>

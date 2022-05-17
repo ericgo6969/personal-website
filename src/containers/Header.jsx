@@ -54,7 +54,7 @@ function Header() {
                                         <img src={cloud1} alt="cloud" />
                                     </div>
                                 </div>
-                                <div className="moon__back layer" data-depth="0.4">
+                                <div className="moon__back layer" data-depth="0.3">
                                     <div className="cloud cloud--back cloud--back2 js-moon">
                                         <img src={bCloud02} alt="cloud" />
                                     </div>
@@ -68,12 +68,12 @@ function Header() {
                                 <div className="moon__back moon__center layer">
                                     <img src={moon} alt="moon" />
                                 </div>
-                                <div className="moon__front layer" data-depth="0.7">
+                                <div className="moon__front layer" data-depth="0.6">
                                     <div className="cloud cloud--front cloud--front3 js-moon">
                                         <img src={cloud3} alt="cloud" />
                                     </div>
                                 </div>
-                                <div className="moon__back layer" data-depth="0.3">
+                                <div className="moon__back layer" data-depth="0.4">
                                     <div className="cloud cloud--back cloud--back1 js-moon">
                                         <img src={bCloud01} alt="cloud" />
                                     </div>
@@ -84,13 +84,13 @@ function Header() {
                 </div>
                 <div className="moon-background">
                     <div className="moonlight">
-                        <div className="moonlight__wrap js-paralax-moonlight" data-depth="0.2">
+                        <div className="moonlight__wrap js-paralax-moonlight layer" data-depth="0.2">
                             <div className="layer moonlight__img"></div>
                         </div>
                     </div>
                 </div>
                 <div className="star js-parallax-moonlight">
-                    <div className="layer" data-depth="0.1">
+                    <div className="layer" data-depth="0.3">
                         <div className="star__img">
                             <img src={bStart} alt="star" />
                         </div>

@@ -44,15 +44,62 @@
   width: 67%;
   -webkit-transform: translate(0, -5%);
           transform: translate(0, -5%);
+  position: relative;
 }
 
 .portfolio .wrapper .main .center .wrapper {
   height: 100%;
   width: 99%;
   background: #ccc;
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.portfolio .wrapper .main .center .wrapper.pack1 {
+  background: black;
+  max-height: 500px;
+  max-width: 500px;
+  top: 2rem;
+  right: 2rem;
+  left: auto;
   -webkit-transform: translate(0);
           transform: translate(0);
-  position: static;
+  z-index: 4;
+}
+
+.portfolio .wrapper .main .center .wrapper.pack2 {
+  background: gray;
+  height: 70%;
+  width: 80%;
+  bottom: 2.5rem;
+  right: 1rem;
+  top: auto;
+  left: auto;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  z-index: 2;
+}
+
+.portfolio .wrapper .main .center .wrapper.pack3 {
+  background: #ccc;
+  height: 70%;
+  width: 80%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  z-index: 1;
+}
+
+.portfolio .wrapper .main .center .wrapper.pack4 {
+  background: #666;
+  height: 50%;
+  width: 60%;
+  left: 0;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  z-index: 3;
 }
 
 .portfolio .wrapper .main .right {
