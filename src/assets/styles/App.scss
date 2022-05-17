@@ -39,16 +39,18 @@ section {
     height: 100vh;
     width: 100vw;
 
-    .wrapper {
-        width: 87%;
-        height: 80%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        // background: white;
-        // min-width: 1780px;
-        border-radius: 8px;
-        // overflow: hidden;
+    &:not(:first-child) {
+        .wrapper {
+            width: 87%;
+            height: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            // background: white;
+            // min-width: 1780px;
+            border-radius: 8px;
+            // overflow: hidden;
+        }
     }
 }

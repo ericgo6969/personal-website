@@ -1,4 +1,6 @@
 import { gsap, Power3 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
 export function initStartAnimation() {
     gsap.from(
@@ -68,47 +70,46 @@ export function initStartAnimation() {
     );
 }
 
-export function mouseMoveAnimation(h1, cursor) {
-    let tl = gsap.timeline();
-    let tl2 = gsap.timeline();
-    let posX = 0;
-    let posY = 0;
-    let mouseX = 0;
-    let mouseY = 0;
+export function mouseMoveAnimation() {
+    document.getElementsByClassName("fullpage-slide")[0].addEventListener("mousemove", function (e) {
+        document.querySelectorAll('.layer').forEach(image => {
+            let speed = (image.dataset.depth) ?? 0,
+                x = e.screenX / (40 / speed),
+                y = e.screenY / (40 / speed);
 
-    tl.to({}, 0.016, {
-        repeat: -1,
-        onRepeat: function () {
-            posX += (mouseX - posX) / 10;
-            posY += (mouseY - posY) / 10;
-            tl.set(cursor, {
-                css: {
-                    left: posX - 50,
-                    top: posY - 50,
+            gsap.to(
+                image.childNodes[0],
+                {
+                    x: -x,
+                    y: -y,
                 }
-            })
-        }
+            );
+        })
     })
-    document.addEventListener("mousemove", function (e) {
-        mouseX = e.pageX;
-        mouseY = e.pageY;
-
-    })
-    tl2.from('.cloud--front1', {
-        x: 300,
-        opacity: 0,
-        ease: Power3.easeOut,
-        delay: 0.6
-    })
-    tl2.from('.cloud--front3',
-        {
-            x: 300,
-            opacity: 0,
-            ease: Power3.easeOut,
-            delay: 0.5
-        }, "-=1")
 }
 
 export function sectionScrollAnimation() {
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((panel) => {
+        ScrollTrigger.create({
+            trigger: panel,
+            end: "bottom top+=1",
+            onEnter: () => goToPanel(panel),
+            onEnterBack: () => goToPanel(panel),
+        });
+    });
+    ScrollTrigger.addEventListener("scrollStart", () => document.body.style.setProperty('overflow', 'hidden'));
+    ScrollTrigger.addEventListener("scrollEnd", () => document.body.style.setProperty('overflow', 'scroll'));
+}
+
+function goToPanel(panel) {
+    gsap.to(window, {
+        scrollTo: { y: panel, autoKill: false },
+        duration: 0,
+    });
 }

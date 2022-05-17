@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     initStartAnimation();
     sectionScrollAnimation();
-    // mouseMoveAnimation(h1, cursor);
+    mouseMoveAnimation();
   }, [])
 
 
