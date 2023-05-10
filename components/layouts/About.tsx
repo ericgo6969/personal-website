@@ -10,15 +10,12 @@ function About() {
             <div className="about w-full h-full relative">
                 <h2 className="title absolute text-title left-0 top-4 tracking-widest z-10">My.about()</h2>
                 <div className="w-full h-full lg:flex justify-between items-center mt-4">
-                    <div className="img lg:h-full h-[50vw] lg:w-1/2 lg:pl-0 ml-7 relative flex justify-center items-center rounded-md overflow-hidden">
-                        <Image
-                            src="/images/avatar.jpeg"
-                            alt="ericgo avatar"
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            className="w-full h-full object-cover saturate-0 brightness-75 contrast-150"
-                        />
+                    <div className="img lg:h-full h-[50vw] lg:w-1/2 rounded-md lg:pl-0 ml-7 relative flex justify-center items-center rounded-md overflow-hidden">
+                        <div className="glitch-effect absolute h-full w-full top-0 left-0"></div>
+                        <div className="glitch-effect absolute h-full w-full top-0 left-0"></div>
+                        <div className="glitch-effect absolute h-full w-full top-0 left-0"></div>
+                        <div className="glitch-effect absolute h-full w-full top-0 left-0"></div>
+                        <div className="glitch-effect absolute h-full w-full top-0 left-0"></div>
                     </div>
                     <div className="content lg:w-1/2 h-full">
                         <div className="title text-title tracking-wider lg:absolute w-full xl:text-center lg:hidden block xl:block md:text-center top-4 xl:ml-4 lg:ml-0 left-0 mt-5 lg:mt-0 z-[3]">
