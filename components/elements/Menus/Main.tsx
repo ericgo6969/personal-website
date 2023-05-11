@@ -16,7 +16,7 @@ function Main() {
             <li className="menu-item ml-8 block cursor-scale">
                 <a
                     className="px-4 py-1 border rounded-md border-primary-500 md:text-2xl text-xl"
-                    href="https://static.topcv.vn/topcv-cv-uploads/919f7798a27853643782b77f1575cbf1.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                    href="https://static.topcv.vn/topcv-cv-uploads/c211294c28fce1ab707ae1de1d2299f6.pdf#toolbar=0&navpanes=0&scrollbar=0"
                 >
                     Resume
                 </a>

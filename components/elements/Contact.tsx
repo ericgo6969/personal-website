@@ -118,7 +118,7 @@ function Contact() {
                             </Link>
                         </div>
                         <Link
-                            href="https://static.topcv.vn/topcv-cv-uploads/919f7798a27853643782b77f1575cbf1.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                            href="https://static.topcv.vn/topcv-cv-uploads/c211294c28fce1ab707ae1de1d2299f6.pdf#toolbar=0&navpanes=0&scrollbar=0"
                             className="block flex-1 w-full font-bold text-white uppercase text-2xl tracking-wider bg-[#cf3247] rounded-lg text-center py-1 px-2"
                         >
                             <p>Resume</p>
