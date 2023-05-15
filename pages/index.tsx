@@ -27,7 +27,7 @@ const Home: NextPage = () => {
                 <Skills />
                 <Link
                     href="/contact"
-                    className="relative z-10 block mb-8 max-w-[50%] cursor-pointer w-full font-bold text-white capitalize text-2xl tracking-wider bg-[#cf3247] rounded-lg text-center py-2 px-4 m-auto"
+                    className="relative z-10 block mb-8 max-w-[50%] cursor-pointer w-full font-bold text-white capitalize text-2xl tracking-wider bg-[#cf3247] rounded-lg text-center py-2 px-4 m-auto cursor-scale"
                 >
                     Me.contact()
                 </Link>
